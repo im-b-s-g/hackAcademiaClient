@@ -1,0 +1,11 @@
+.home-div {
+  padding: 2rem;
+  display: flex;
+  flex-flow: row;
+}
+
+@media only screen and (max-width: 686px) {
+  .h-news {
+    display: none;
+  }
+}

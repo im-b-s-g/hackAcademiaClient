@@ -1,0 +1,25 @@
+.news-box {
+  padding: 1rem;
+  margin-right: 5%;
+  color: var(--Black);
+  border: 4px solid var(--Black);
+  background-color: var(--backgroundBlack);
+  box-shadow: 0 0 25px 1px var(--Black);
+  width: fit-content;
+  height: 60vh;
+  border-radius: 1rem;
+}
+
+.new-1 {
+  width: 100%;
+  height: 2px;
+  margin: 1rem 0 1rem 0;
+  border-radius: 1px;
+  background-color: var(--buttonBlack);
+}
+
+.head-news {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-left: 2rem;
+}

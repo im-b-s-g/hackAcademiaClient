@@ -1,0 +1,81 @@
+.navbars {
+  overflow: hidden;
+  background-color: var(--lightBlack);
+  border-radius: 0.7rem;
+  border: 2px solid var(--blackShadow);
+  width: 80%;
+  margin-left: 10.3%;
+  margin-top: 1rem;
+}
+
+.navbars a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdowns {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdowns .dropbtns {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbars a:hover,
+.dropdown:hover .dropbtn {
+  background-color: var(--hover);
+}
+
+.dropdown-contents {
+  display: none;
+  position: absolute;
+  background-color: var(--hover);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropbtns {
+  width: fit-content;
+}
+.dropbtns:hover {
+  background-color: var(--hover);
+}
+
+.dropdown-contents a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-contents a:hover {
+  background-color: var(--blackShadow);
+}
+
+.dropdowns:hover .dropdown-contents {
+  display: block;
+}
+
+@media only screen and (max-width: 686px) {
+  .navbars {
+    scale: 0.9;
+    width: 100%;
+    position: relative;
+    left: -10%;
+  }
+}

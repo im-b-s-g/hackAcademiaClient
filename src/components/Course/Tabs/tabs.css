@@ -1,0 +1,41 @@
+.tabs ul {
+  gap: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start;
+}
+
+.tabs ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+.tab-unactive {
+  padding: 0.5rem;
+  border: 1px solid var(--white);
+  border-radius: 0.5rem 0.5rem 0 0;
+  color: white;
+  background-color: var(--lightBlack);
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.tab-active {
+  padding: 0.5rem;
+  border-top: 2px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 0;
+  border-style: solid;
+  border-color: var(--white);
+  border-radius: 0.5rem 0.5rem 0 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  background-color: var(--buttonBlack);
+}
+
+input {
+  position: absolute;
+  z-index: -1;
+}

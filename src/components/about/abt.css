@@ -1,0 +1,18 @@
+.About-section {
+  padding: 2rem;
+  color: white;
+}
+
+.About-video {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5%;
+}
+
+.About-text2 {
+  width: 30%;
+  font-size: 1rem;
+  font-weight: 300;
+}

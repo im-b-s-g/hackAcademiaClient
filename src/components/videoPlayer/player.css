@@ -1,0 +1,12 @@
+.vid-abt {
+  position: relative;
+  top: 1.5rem;
+}
+
+@media only screen and (max-width: 686px) {
+  .vid-abt {
+    position: relative;
+    left: -12rem;
+    scale: 0.5;
+  }
+}

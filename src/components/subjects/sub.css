@@ -1,0 +1,23 @@
+.subject-main {
+  width: 80%;
+}
+
+.subject-contents {
+  display: flex;
+  flex-flow: column;
+  margin-left: 2rem;
+  gap: 2rem;
+}
+
+.subject-render {
+  text-decoration: none;
+  color: white;
+  background-color: var(--lightBlack);
+  padding: 2.5%;
+  border-radius: 1rem;
+}
+
+.subject-render:hover {
+  background-color: var(--blackShadow);
+  transition: 0.3s;
+}

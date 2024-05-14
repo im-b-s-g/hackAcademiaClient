@@ -1,0 +1,21 @@
+.Site-text {
+  display: flex;
+  color: white;
+  flex-flow: column;
+}
+
+.text-1 {
+  width: 80%;
+}
+
+@media only screen and (max-width: 686px) {
+  .Site-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-1 {
+    width: 120%;
+    text-align: left;
+  }
+}

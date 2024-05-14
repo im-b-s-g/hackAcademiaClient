@@ -1,0 +1,23 @@
+.unit-main {
+  width: 80%;
+}
+
+.unit-contents {
+  display: flex;
+  flex-flow: column;
+  margin-left: 2rem;
+  gap: 2rem;
+}
+
+.unit-render {
+  text-decoration: none;
+  color: white;
+  background-color: var(--lightBlack);
+  padding: 2.5%;
+  border-radius: 1rem;
+}
+
+.unit-render:hover {
+  background-color: var(--buttonBlack);
+  transition: 0.3s;
+}

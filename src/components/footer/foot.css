@@ -1,0 +1,17 @@
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.f-right {
+  position: relative;
+  top: 8rem;
+  left: 11rem;
+  scale: 0.25;
+}
