@@ -1,1 +1,1 @@
-export const Port = "localhost:3000";
+export const Port = "https://hack-academia-server.vercel.app";
