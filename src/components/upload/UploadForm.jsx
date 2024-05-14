@@ -44,7 +44,7 @@ const App = () => {
 
       console.log("PAYLOAD: " + formData);
 
-      const response = await axios.post("http://${Port}/upload", formData, {
+      const response = await axios.post(`${Port}/upload`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -62,7 +62,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://${Port}/pdfs");
+        const response = await axios.get("${Port}/pdfs");
         setPdfs(response.data);
       } catch (error) {
         console.error("Error fetching PDFs:", error);
@@ -73,12 +73,9 @@ const App = () => {
 
   const handleDownloadPdf = async (filename) => {
     try {
-      const response = await axios.get(
-        `http://${Port}/download-pdf/${filename}`,
-        {
-          responseType: "blob",
-        }
-      );
+      const response = await axios.get(`${Port}/download-pdf/${filename}`, {
+        responseType: "blob",
+      });
 
       const url = window.URL.createObjectURL(new Blob([response.data]));
 
@@ -97,7 +94,7 @@ const App = () => {
 
   const handleViewPdf = async (filename) => {
     try {
-      window.open(`http://${Port}/view-pdf/${filename}`, "_blank");
+      window.open(`${Port}/view-pdf/${filename}`, "_blank");
     } catch (error) {
       console.error("Error viewing PDF:", error);
     }

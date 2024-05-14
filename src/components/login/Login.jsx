@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import axios from "axios";
+import { Port } from "../server/Port";
 import { useNavigate } from "react-router-dom";
 import "./logi.css";
 
@@ -17,7 +18,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:3000/Login", {
+      const response = await axios.post(`${Port}/Login`, {
         username: username,
         password: password,
       });

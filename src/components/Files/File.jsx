@@ -22,10 +22,10 @@ const File = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://${Port}/pdfs?currSem=${currSem}&currCourse=${currCourse}&subjectName=${subjectName}&unit=${unit}`
+          `${Port}/pdfs?currSem=${currSem}&currCourse=${currCourse}&subjectName=${subjectName}&unit=${unit}`
         );
         console.log(
-          `http://${Port}/pdfs?currSem=${currSem}&currCourse=${currCourse}&subjectName=${subjectName}&unit=${unit}`
+          `${Port}/pdfs?currSem=${currSem}&currCourse=${currCourse}&subjectName=${subjectName}&unit=${unit}`
         );
         setPdfs(response.data);
       } catch (error) {
@@ -38,7 +38,7 @@ const File = () => {
 
   const handleViewPdf = async (filename) => {
     try {
-      window.open(`http://${Port}/view-pdf/${filename}`, "_blank");
+      window.open(`${Port}/view-pdf/${filename}`, "_blank");
     } catch (error) {
       console.error("Error viewing PDF:", error);
     }
