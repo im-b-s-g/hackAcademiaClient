@@ -29,6 +29,9 @@ const File = () => {
         );
         setPdfs(response.data);
       } catch (error) {
+        console.log(
+          `${Port}/pdfs?currSem=${currSem}&currCourse=${currCourse}&subjectName=${subjectName}&unit=${unit}`
+        );
         console.error("Error fetching PDFs:", error);
       }
     };

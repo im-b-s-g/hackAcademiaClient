@@ -1,1 +1,1 @@
-export const Port = "hack-academia-client.vercel.app";
+export const Port = "hack-academia-server.vercel.app";
