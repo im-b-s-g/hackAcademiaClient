@@ -24,14 +24,14 @@ const File = () => {
         const response = await axios.get(
           `${Port}/pdfs?currSem=${currSem}&currCourse=${currCourse}&subjectName=${subjectName}&unit=${unit}`
         );
-        console.log(
-          `${Port}/pdfs?currSem=${currSem}&currCourse=${currCourse}&subjectName=${subjectName}&unit=${unit}`
-        );
-        setPdfs(response.data);
+        console.log("API response:", response);
+        // Ensure the response data is an array
+        if (Array.isArray(response.data)) {
+          setPdfs(response.data);
+        } else {
+          console.error("Expected an array but got:", response.data);
+        }
       } catch (error) {
-        console.log(
-          `${Port}/pdfs?currSem=${currSem}&currCourse=${currCourse}&subjectName=${subjectName}&unit=${unit}`
-        );
         console.error("Error fetching PDFs:", error);
       }
     };
