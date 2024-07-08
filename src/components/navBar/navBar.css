@@ -64,7 +64,7 @@
 }
 
 .dropdown-contents a:hover {
-  background-color: var(--blackShadow);
+  background-color: var(--buttonBlack);
 }
 
 .dropdowns:hover .dropdown-contents {
@@ -73,9 +73,8 @@
 
 @media only screen and (max-width: 686px) {
   .navbars {
-    scale: 0.9;
-    width: 100%;
-    position: relative;
-    left: -10%;
+    display: flex;
+    flex-flow: row;
+    width: 80%;
   }
 }

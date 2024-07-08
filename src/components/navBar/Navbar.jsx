@@ -7,9 +7,13 @@ import "./navBar.css";
 const Navbar = () => {
   return (
     <div className="navbars">
-      <Link to="/">Home</Link>
+      <Link to="/" id="home">
+        Home
+      </Link>
       <div className="dropdowns">
-        <button className="dropbtns">Courses</button>
+        <button id="navpart" className="dropbtns">
+          Courses
+        </button>
         <div className="dropdown-contents">
           <Link to="/B_tech/1" id="B.tech">
             B.Tech
