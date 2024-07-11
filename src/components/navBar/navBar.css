@@ -73,9 +73,13 @@
 
 @media only screen and (max-width: 686px) {
   .navbars {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     display: flex;
     flex-flow: row;
     width: 80%;
+  }
+
+  #About {
+    width: 7rem;
   }
 }
