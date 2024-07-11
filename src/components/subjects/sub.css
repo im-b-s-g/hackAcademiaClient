@@ -6,12 +6,14 @@
   display: flex;
   flex-flow: column;
   margin-left: 2rem;
+  width: 100%;
   gap: 2rem;
 }
 
 .subject-render {
   text-decoration: none;
   color: white;
+
   background-color: var(--lightBlack);
   padding: 2.5%;
   border-radius: 1rem;
@@ -20,4 +22,21 @@
 .subject-render:hover {
   background-color: var(--blackShadow);
   transition: 0.3s;
+}
+
+@media only screen and (max-width: 686px) {
+  .subject-render {
+    width: 50%;
+    font-size: 0.6rem;
+    padding: 0.9rem;
+  }
+  .subject-contents {
+    position: relative;
+    left: -0.5rem;
+    width: 200%;
+  }
+
+  .subject-main h2 {
+    font-size: 1.25rem;
+  }
 }

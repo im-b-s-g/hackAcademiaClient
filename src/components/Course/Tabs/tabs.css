@@ -6,6 +6,11 @@
   justify-items: flex-start;
 }
 
+.tabs {
+  position: relative;
+  left: -1.9rem;
+}
+
 .tabs ul li {
   list-style-type: none;
   text-decoration: none;
@@ -38,4 +43,17 @@
 input {
   position: absolute;
   z-index: -1;
+}
+
+@media only screen and (max-width: 686px) {
+  .tab-item {
+    font-size: 0.7rem;
+  }
+  .tab-list {
+    width: max-content;
+  }
+  .tabs {
+    position: relative;
+    left: -1.9rem;
+  }
 }

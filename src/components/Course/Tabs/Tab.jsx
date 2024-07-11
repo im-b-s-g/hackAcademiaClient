@@ -10,6 +10,7 @@ const Tab = ({ duration, setYearNo }) => {
   const mapping = (key) => {
     return (
       <li
+        className="tab-item"
         key={key}
         onClick={() => {
           setYearNo(key);
@@ -35,7 +36,7 @@ const Tab = ({ duration, setYearNo }) => {
 
   return (
     <div className="tabs">
-      <ul>{render().map((key) => mapping(key))}</ul>
+      <ul className="tab-list">{render().map((key) => mapping(key))}</ul>
     </div>
   );
 };
