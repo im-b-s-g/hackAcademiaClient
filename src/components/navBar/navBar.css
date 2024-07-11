@@ -1,4 +1,7 @@
 .navbars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   overflow: hidden;
   background-color: var(--lightBlack);
   border-radius: 0.7rem;
@@ -6,11 +9,11 @@
   width: 80%;
   margin-left: 10.3%;
   margin-top: 1rem;
+  z-index: -1;
 }
 
 .navbars a {
   float: left;
-  font-size: 16px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -18,12 +21,12 @@
 }
 
 .dropdowns {
+  z-index: 9;
   float: left;
   overflow: hidden;
 }
 
-.dropdowns .dropbtns {
-  font-size: 16px;
+.dropbtns {
   border: none;
   outline: none;
   color: white;
@@ -47,9 +50,6 @@
   z-index: 1;
 }
 
-.dropbtns {
-  width: fit-content;
-}
 .dropbtns:hover {
   background-color: var(--hover);
 }
@@ -73,6 +73,7 @@
 
 @media only screen and (max-width: 686px) {
   .navbars {
+    font-size: 0.8rem;
     display: flex;
     flex-flow: row;
     width: 80%;
