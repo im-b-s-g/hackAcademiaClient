@@ -1,8 +1,26 @@
 .mainArea {
   margin-top: 3rem;
-  padding: 2rem;
+  padding: 1rem;
+  padding-top: 2rem;
   border-radius: 1rem;
   width: 100%;
   height: fit-content;
   background-color: var(--lightBlack);
+}
+
+@media only screen and (min-width: 0px) {
+  .mainArea {
+    padding: 1rem;
+  }
+}
+@media only screen and (min-width: 450px) {
+  .mainArea {
+    padding: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .mainArea {
+    padding: 2rem;
+  }
 }

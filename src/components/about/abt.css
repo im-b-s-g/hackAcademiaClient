@@ -1,6 +1,13 @@
 .About-section {
-  padding: 2rem;
+  padding: 0.5rem;
   color: white;
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+}
+
+.about-text p {
+  text-align: left;
 }
 
 .About-video {
@@ -8,11 +15,15 @@
   flex-flow: row;
   justify-content: space-evenly;
   align-items: center;
-  gap: 5%;
+}
+video {
+  height: 20rem;
+  border: 2px solid black;
+  border-radius: 1.5rem;
 }
 
-.About-text2 {
-  width: 30%;
-  font-size: 1rem;
-  font-weight: 300;
+@media only screen and (max-width: 686px) {
+  video {
+    height: 22vh;
+  }
 }

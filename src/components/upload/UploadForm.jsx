@@ -156,7 +156,6 @@ const App = () => {
           <div className="f-content">
             <br />
             <label htmlFor="title">Subject Name</label> <br />
-            {/* <input type="text" id="title" name="title" required /> */}
             <select onChange={handleSubject} name="title" id="title" required>
               {semester &&
                 course &&
@@ -197,22 +196,6 @@ const App = () => {
           <p id="successText"></p>
         </form>
       </div>
-
-      {/* <div className="pdfsFile">
-        <ul>
-          {pdfs.map((pdf) => (
-            <div key={pdf.filename} className="list-render">
-              <li>{pdf.title}</li>
-              <button
-                className="btn"
-                onClick={() => handleViewPdf(pdf.filename)}
-              >
-                View PDF
-              </button>
-            </div>
-          ))}
-        </ul>
-      </div> */}
     </div>
   );
 };

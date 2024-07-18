@@ -5,7 +5,7 @@
   border: 4px solid var(--Black);
   background-color: var(--backgroundBlack);
   box-shadow: 0 0 25px 1px var(--Black);
-  width: fit-content;
+  width: 20rem;
   height: 60vh;
   border-radius: 1rem;
 }
@@ -22,4 +22,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   margin-left: 2rem;
+}
+
+@media only screen and (min-width: 686px) {
 }

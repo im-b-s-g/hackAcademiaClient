@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "./abt.css";
+import myintro from "../../assets/video.mp4";
 import VideoPlayer from "../videoPlayer/Vplayer";
 const About = () => {
   return (
@@ -23,7 +24,16 @@ const About = () => {
         </p>
       </div>
       <div className="About-video">
-        <VideoPlayer />
+        {/* <VideoPlayer /> */}
+        <video
+          src={myintro}
+          autoPlay
+          controls
+          loop
+          preload="auto|metadata|none"
+          muted
+          type="video/mp4"
+        ></video>
       </div>
     </div>
   );
