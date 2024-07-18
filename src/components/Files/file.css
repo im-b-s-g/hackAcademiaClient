@@ -35,3 +35,14 @@ ul {
   color: white;
   background-color: rgb(56, 56, 56);
 }
+
+@media only screen and (max-width: 686px) {
+  .list-render li {
+    font-size: 0.9rem;
+  }
+
+  .list-render .btn {
+    width: 5rem;
+    font-size: 0.8rem;
+  }
+}
