@@ -40,7 +40,7 @@ const Login = () => {
 
   return (
     <div className="login-form">
-      <h4>Admin Login Here</h4>
+      <h4>Admin Login</h4>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="exampleInputEmail1">Email address</label>
