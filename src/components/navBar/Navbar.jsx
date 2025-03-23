@@ -29,9 +29,9 @@ const Navbar = () => {
       <Link to="About" id="About">
         About Us!
       </Link>
-      <Link to="Login" id="Login">
+      {/* <Link to="Login" id="Login">
         Login
-      </Link>
+      </Link> */}
     </div>
   );
 };
