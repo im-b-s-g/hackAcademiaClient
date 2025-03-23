@@ -55,11 +55,15 @@ export const data = {
       "TCS-320 - Application Based Programming in Python (Through Swayam)",
       "TOC301 - Probability and Statistics",
     ],
-    4: ["Engineering Physics"],
-    5: ["Engineering Physics"],
-    6: ["Engineering Physics"],
-    7: ["Engineering Physics"],
-    8: ["Engineering Physics"],
+    4: [" "],
+    5: [" "],
+    6: [" "],
+    7: [" "],
+    8: [
+      "TDM-881 - Disaster Management",
+      "TCS-851 - Storage Networks",
+      "TCS-802 - Mobile Computing",
+    ],
   },
   BCA: {
     1: [

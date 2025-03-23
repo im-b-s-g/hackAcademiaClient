@@ -9,9 +9,9 @@ const News = () => {
       <div className="new-1" />
       <div className="new-info">
         <ul>
-          <li>B.tech First year syllabus Added </li>
-          <li>New Course Added</li>
-          <li>PYQ&apos;s added for B.tech CSE 1 sem</li>
+          <li>Only B.tech final year Notes until Mid-Semester are available</li>
+          {/* <li>New Course Added</li>
+          <li>PYQ&apos;s added for B.tech CSE 1 sem</li> */}
         </ul>
       </div>
     </div>

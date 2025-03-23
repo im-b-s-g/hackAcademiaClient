@@ -36,6 +36,11 @@ ul {
   background-color: rgb(56, 56, 56);
 }
 
+.buttons {
+  display: flex;
+  gap: 2px;
+}
+
 @media only screen and (max-width: 686px) {
   .list-render li {
     font-size: 0.9rem;

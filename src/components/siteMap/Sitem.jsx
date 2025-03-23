@@ -8,26 +8,27 @@ const Sitem = () => {
       <div className="text-1">
         <h1>Home</h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-          omnis adipisci saepe ut corporis voluptatem molestias ab nisi
-          explicabo quam.
+          Welcome to Hack Academia, your go-to resource for comprehensive PDF
+          notes on semester notes. Our curated materials are designed to enhance
+          your knowledge.
         </p>
       </div>
       <div className="text-1">
         <h1>Course</h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem vero
-          eaque quas laudantium quasi corrupti consectetur perspiciatis nobis
-          neque ducimus?
+          Explore our extensive collection of PDF notes, covering everything for
+          engineering to Law. Each document is crafted to provide clear,
+          practical insights for students to excel in semester exams.
         </p>
       </div>
 
       <div className="text-1">
         <h1>About Us!</h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-          inventore animi at, harum maxime distinctio totam eligendi magnam
-          suscipit esse.
+          At Hack Academia, we are dedicated to empowering individuals with the
+          knowledge to navigate and secure the digital world. Our mission is to
+          provide accessible, high-quality educational materials that foster a
+          deeper understanding of cybersecurity.
         </p>
       </div>
     </div>
