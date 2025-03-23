@@ -6,7 +6,7 @@ import File from "../../Files/File";
 import Subject from "../../subjects/Subject";
 
 const YearData = ({ yearNo, currCourse }) => {
-  console.log("in Year: " + currCourse);
+  // console.log("in Year: " + currCourse);
   let one = yearNo * 2 - 1;
   let two = yearNo * 2;
   return (

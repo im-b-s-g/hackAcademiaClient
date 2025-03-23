@@ -26,7 +26,7 @@ const Mainsimple = () => {
         />
         <Route
           path="/LAW/*"
-          element={<B_tech duration={5} currCourse={"LAW"} />}
+          element={<B_tech duration={4} currCourse={"LAW"} />}
         />
         <Route path="/Login/*" element={<Login />} />
         <Route path="/Upload/*" element={<Upload />} />
