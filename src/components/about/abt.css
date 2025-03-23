@@ -18,7 +18,7 @@
 }
 video {
   height: 20rem;
-  border: 2px solid black;
+  border: 2px solid rgb(31, 31, 31);
   border-radius: 1.5rem;
 }
 
@@ -26,4 +26,20 @@ video {
   video {
     height: 22vh;
   }
+}
+.container {
+  background: #0000009a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+}
+
+.author {
+  padding-left: 2rem;
+  display: flex;
+  flex-flow: row;
+  gap: 2rem;
+  align-items: flex-start;
 }
