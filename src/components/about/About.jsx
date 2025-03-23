@@ -15,18 +15,18 @@ const About = () => {
           deeper understanding of cybersecurity.
         </p>
       </div>
-      <div className="About-video">
-        {/* <VideoPlayer /> */}
-        <video
-          src={myintro}
-          autoPlay
-          controls
-          loop
-          preload="auto|metadata|none"
-          muted
-          type="video/mp4"
-        ></video>
-      </div>
+      {/* <div className="About-video"> */}
+      {/* <VideoPlayer /> */}
+      {/* <video */}
+      {/* src={myintro} */}
+      {/* autoPlay */}
+      {/* controls */}
+      {/* loop */}
+      {/* preload="auto|metadata|none" */}
+      {/* muted */}
+      {/* type="video/mp4" */}
+      {/* ></video> */}
+      {/* </div> */}
     </div>
   );
 };
