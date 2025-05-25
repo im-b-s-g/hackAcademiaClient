@@ -8,8 +8,6 @@ import "./file.css";
 
 const File = () => {
   const location = useLocation();
-  console.log(location);
-  // Access query parameters from the location object
   const queryParams = new URLSearchParams(location.search);
   const currSem = queryParams.get("currSem");
   const currCourse = queryParams.get("currCourse");
@@ -17,22 +15,19 @@ const File = () => {
   const unit = queryParams.get("unit");
 
   const [pdfs, setPdfs] = useState([]);
-  // subjectName, CourseCode, UnitNumber
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
           `${Port}/pdfs?currSem=${currSem}&currCourse=${currCourse}&subjectName=${subjectName}&unit=${unit}`
         );
-        console.log(
-          `${Port}/pdfs?currSem=${currSem}&currCourse=${currCourse}&subjectName=${subjectName}&unit=${unit}`
-        );
         setPdfs(response.data);
       } catch (error) {
-        console.log(
-          `${Port}/pdfs?currSem=${currSem}&currCourse=${currCourse}&subjectName=${subjectName}&unit=${unit}`
-        );
         console.error("Error fetching PDFs:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -49,16 +44,26 @@ const File = () => {
 
   return (
     <div>
-      <ul>
-        {pdfs.map((pdf, index) => (
-          <div key={index} className="list-render">
-            <li>{pdf.filename}</li>
-            <button className="btn" onClick={() => handleViewPdf(pdf.filename)}>
-              View PDF
-            </button>
-          </div>
-        ))}
-      </ul>
+      {loading ? (
+        <div className="loader">
+          Loading files...
+          <div className="spinner"></div>
+        </div>
+      ) : (
+        <ul>
+          {pdfs.map((pdf, index) => (
+            <div key={index} className="list-render">
+              <li>{pdf.filename}</li>
+              <button
+                className="btn"
+                onClick={() => handleViewPdf(pdf.filename)}
+              >
+                View PDF
+              </button>
+            </div>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
